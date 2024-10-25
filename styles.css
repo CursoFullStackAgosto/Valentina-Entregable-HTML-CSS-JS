@@ -1,0 +1,176 @@
+h1 {
+    font-family:    'Poppins', sans-serif;
+    color:          #ff66a3;
+    font-size:      5rem;
+    font-weight:    bold;
+    text-shadow:    2px 2px #ffb6c1;
+    text-align:     center;
+}
+
+button {
+    padding:                8px 16px;
+    background-color:       #28a745;
+    color:                  white;
+    border:                 none;
+    border-radius:          4px;
+    cursor:                 pointer;
+    font-size:              16px;
+    transition:             background-color 0.3s ease;   /* causes the transition to start slow, speed up in the middle, and then slow down again towards the end */
+    margin:                 20px auto;
+    /* Make an element a block-level element, meaning it will:
+        1, Occupy the full width of its container (taking up a new line)
+        2. Stack vertically, meaning elements before or after it will move to the next line
+        3. Respect its height and width properties
+    */
+    display:                block;
+}
+
+button:hover {
+    background-color:       #218838;
+}
+
+input {
+    font-size:              20px;
+    display:                block;
+    margin:                 0 auto;
+    text-align:             center;
+    border-radius:          7px;
+    background-color:       rgb(173, 230, 209);
+}
+
+body {
+    font-family:        'Poppins', sans-serif;
+    background-color:   #ffeaf2;
+    position:           absolute;
+    padding:            15px 15px 15px 15px;
+    display:            flex;
+    justify-content:    center;     
+    align-items:        center;     
+    height:             100vh;      
+    width:              100%;
+}
+
+main {
+    max-width:          400px;
+    margin:             0 auto;
+    background-color:   white;
+    padding:            20px;
+    border-radius:      20px;
+    box-shadow:         0 0 15px rgba(255, 182, 193, 0.5);
+    border:             2px solid #ffb6c1;
+    overflow-wrap:      break-word;   /* Prevents text from wrapping */
+}
+
+text {
+    width:              calc(100% - 110px);
+    padding:            12px;
+    font-size:          16px;
+    border:             2px solid #ffb6c1;
+    border-radius:      10px;
+    outline:            none;       /* Removes the outline when the input is selected */
+    margin-right:       10px;
+    background-color:   #fff5f8;
+}
+
+ul {
+    list-style-type:    none;
+    padding:            0;
+    margin-top:         20px;
+}
+
+li {
+    position:       relative;    
+    padding:        10px;
+    font-family:    'Poppins', sans-serif;
+    font-size:      17px;
+    font-weight:    bold;
+}
+
+li:hover {
+    background-color:   gray;
+    border-radius:      5px;
+    cursor:             pointer;
+}
+
+li::before {
+    content:        "\25A0";     /* Unicode character for a bullet point */
+    color:          #68186b;
+    margin-right:   5px;
+    margin-left:    5px;
+    font-size:      10px;
+}
+
+li:hover .itembox {
+    display:        flex; 
+}
+
+.itembox {
+    display:            none; 
+    width:              150px;
+    height:             100px;
+    background-color:   lightblue;
+    position:           absolute; 
+    top:                0;
+    left:               315px; 
+    border:             1px solid #000;
+    border-radius:      5px;
+    flex-direction:     column; 
+    justify-content:    flex-start;
+    align-items:        flex-start; 
+    padding:            10px; 
+    z-index:            11;
+}
+
+label {
+    display:            flex; 
+    align-items:        center; 
+    margin-right:       10px; 
+}
+
+input[type="radio"] {
+    margin-right:       5px; 
+}
+
+.todo {
+    background-color:   #ef9a9a; 
+    border-radius:      10px; 
+    box-shadow:         0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition:         background-color 0.3s ease; 
+}
+
+.todo:hover {
+    background-color:   #ff5252; 
+}
+
+.in-progress {
+    background-color:   #ffeb3b; 
+    border-radius:      10px; 
+    box-shadow:         0 4px 8px rgba(0, 0, 0, 0.2);
+    transition:         background-color 0.3s ease;
+}
+
+.in-progress:hover {
+    background-color:   #ffe57f; 
+}
+
+.done {
+    position:           relative; 
+    background-color:   #a5d6a7; 
+    border-radius:      10px; 
+    box-shadow:         0 4px 8px rgba(0, 0, 0, 0.2);
+    transition:         background-color 0.3s ease;
+    text-decoration:    line-through;
+    text-decoration-thickness: 3px
+}
+
+.done:hover {
+    background-color:   #81c784; 
+}
+
+input::placeholder {
+    color:              #c181c4;
+    font-size:          18px;
+    font-weight:        bold;
+    text-align:         center;
+    font-family:        'Poppins', sans-serif;
+}
